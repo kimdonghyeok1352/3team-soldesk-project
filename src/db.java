@@ -32,21 +32,21 @@ public class db {
 
 			String url = "jdbc:oracle:thin:@localhost:1521:orcl";
 
-			// JDBC 드라이버를 로딩하는 코드
+			// JDBC �뱶�씪�씠踰꾨�� 濡쒕뵫�븯�뒗 肄붾diddydtjr12
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
 			conn = DriverManager.getConnection(url, id, pw);
 
-			System.out.println("데이터베이스에 연결됐다\n");
+			System.out.println("�뜲�씠�꽣踰좎씠�뒪�뿉 �뿰寃곕릱�떎\n");
 
 		} catch (ClassNotFoundException c) {
 
-			System.out.println("로딩 실패");
+			System.out.println("濡쒕뵫 �떎�뙣");
 
 		} catch (SQLException s) {
 
-			System.out.println("데이터베이스 접속 실패");
+			System.out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �떎�뙣");
 
 		}
 
